@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--- BODY SECTION ---*/
+/*this adds a color gradient to the background from pink to blue*/
+body{
+    /*min-height makes it so that the body takes up 100% of the viewport at all times*/
+    min-height: 100vh;
+    background-image: linear-gradient(#a6ec9d, #49a07c, #82D8F2); /*or do #F4AAEF, #A67EF3 for the first to if I want Vaporwave*/
+}
+section{
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+    max-width: 100%;;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 5vh;
+}
+.subcenter{
+    max-width: 700px;
+    margin: auto;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 5vh;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10%;
+}
+.image{
+    max-width: 50%;
+    max-height: 50%;
+    padding-left: 10%;
+}
+.text{
+    height: 50%;
+    color: #fff;
+    font-size: 20px;
+    inline-size: 700px; /*allows me to adjust how long the text goes on before wrapping*/
+}
+
+
+/*--- HEADER SECTION ---*/
+header{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    /*makes the border rounded*/
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active{
+    background: #fff;
+    color: #82D8F2;
+}
+
+/* MUSIC */
+.playlist {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+    position: absolute;
+    top: 105vh;
+    left: 2vw;
+    bottom: 5vh;
+}
+
+/* AUTOMOTIVE */
+.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.scroll-container img {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+  }
+
+
+  /*LIBRARY */
+ 
